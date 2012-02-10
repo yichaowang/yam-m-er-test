@@ -1,0 +1,108 @@
+@import url(reset.css);
+@import url(960.css);
+ 
+/*
+    universal
+*/
+body {
+    font-family: Helvetica,Arial,sans-serif; 
+    font-size: 12px;
+    background-color:#b7b7b7;
+} 
+
+h1,h2,h3 {
+    font-weight: normal;
+    line-height:1.6; 
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.center{
+    display:inline-block;
+}
+
+img.frame{
+    padding:3px;
+    background-color:#fff;
+    border:1px solid #ccc;
+}
+
+/*
+    structure
+*/
+header{
+    height:55px;
+    background: #fff url('../images/bg_header.png') repeat-x; 
+}
+
+#stage{
+    height:520px;
+    padding-top:23px;
+    padding-bottom:145px;
+    background: #b7b7b7 url('../images/bg_stage.png') repeat-x;
+}               
+
+#control{
+    position:relative;
+    margin-top:-125px;
+    clear:both;
+    height:124px;
+    border-top:1px solid #3c454e;
+    background: #fff url('../images/bg_control.png') repeat-x;
+    text-align:center;
+}
+
+    
+
+/*
+    header
+*/
+header h1{
+    font-size:30px;
+    line-height:55px;
+    text-align:center;
+    color:#fff;
+}
+
+/*
+    stage
+*/
+#stage h1{
+    font-size:23px;
+    color:#363636;
+    text-align:center;    
+}                  
+
+#stage h2{
+    font-size:15px;
+    color:#585858;
+    text-align:center;    
+}
+
+/*
+    control
+*/         
+#control{
+    padding-top:20px;
+}
+    #control .thumb-wrapper{
+    }
+
+    #control a.thumb-list{
+        display:block;
+        float:left;
+        margin-right:20px;
+    }
+
+            
+
+    
+
+
+
+
+   
