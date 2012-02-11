@@ -1,32 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<meta name="robots" content="noindex">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<meta name="description" content="Yammer CSS JS Test">
+	<meta name="description" content="Yam[m]er CSS JS Test">
 	<meta name="author" content="Yichao Wang">
-	<title>Yammer CSS JS Test</title>
+	<title>Yam[m]er CSS JS Test</title>
 	<link type="text/css" rel="stylesheet" media="all" href="css/master.css">
 	<script src="js/head.load.min.js"></script>
 	<script>
 		head.js(
 		   {jquery: "js/jquery-1.7.1.min.js"},
-		   {master: "js/master.js"}
+		   {master: "js/master.min.js"}
 		);    
 	</script>
 </head>
 <body>
 	<header>
-		<h1 id="header-title" class="container_16"></h1>
+		<div class="container_16">
+			<a href="#" class="btn-next"></a>
+			<a href="#" class="btn-prev"></a>
+		</div>
 	</header>
-	<section id="stage">
-		<!--<img class="center frame" src="test_images/image1.jpg">
-		<hgroup class="center">
-			<h1>Mike and Julie at the Late</h1>
-			<h2>Taken on December 15th, 2005 in Los Angeles, California</h2>
-		</hgroup>--> 
-	</section>   
+	<section id="stage"></section>   
 	<section id="control">
-		<div class="center clearfix"></div>
+		<div id="thumbs" class="center clearfix"></div>
 	</seciont>    
 </body>
 </html>

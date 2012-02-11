@@ -12,29 +12,43 @@ body {
 
 h1,h2,h3 {
     font-weight: normal;
-    line-height:1.6; 
+    line-height: 1.6; 
 }
 
 .center{
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 div.center{
-    display:inline-block;
+    display: inline-block;
 }
 
 img.frame{
-    padding:3px;
-    background-color:#fff;
-    border:1px solid #ccc;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #878c92;
+}
+
+img.frame.on{
+    background-color:#85b9f4;
+    border-color:#82becb;
+}
+
+img.frame.hover{
+    background-color:#8597f4;
+}
+
+.cursor{
+    cursor: pointer;
 }
 
 /*
     structure
 */
 header{
+    position:relative;
     height:55px;
     background: #fff url('../images/bg_header.png') repeat-x; 
 }
@@ -42,21 +56,20 @@ header{
 #stage{
     height:520px;
     padding-top:23px;
-    padding-bottom:145px;
     background: #b7b7b7 url('../images/bg_stage.png') repeat-x;
 }               
 
 #control{
-    position:relative;
-    margin-top:-125px;
-    clear:both;
-    height:124px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:104px;
+    padding-top:20px;
     border-top:1px solid #3c454e;
     background: #fff url('../images/bg_control.png') repeat-x;
     text-align:center;
-}
-
-    
+}   
 
 /*
     header
@@ -66,7 +79,7 @@ header h1{
     line-height:55px;
     text-align:center;
     color:#fff;
-}
+} 
 
 /*
     stage
@@ -86,19 +99,35 @@ header h1{
 /*
     control
 */         
-#control{
-    padding-top:20px;
+#thumbs img{
+    float:left;
+    margin-right:20px;
 }
-    #control .thumb-wrapper{
-    }
 
-    #control a.thumb-list{
-        display:block;
-        float:left;
-        margin-right:20px;
-    }
+/*
+    buttons
+*/
+.btn-next, .btn-prev{
+    background:url('../images/btn_nav.png') 0px 0px;
+    margin:14px 17px 0 0;
+    height:28px;
+    width:48px;
+    float:right;
+}   
 
-            
+.btn-prev{
+    background-position:0 -56px;
+    margin:14px 0 0 17px;    
+    float:left;
+}
+
+a.btn-next:active{
+    background-position:0 -28px;
+}
+
+a.btn-prev:active{
+    background-position:0 -84px;
+}            
 
     
 
