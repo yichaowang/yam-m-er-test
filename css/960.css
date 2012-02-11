@@ -640,14 +640,3 @@ body {
 .container_16:after {
   clear: both;
 }
-
-/*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
-
-.clearfix,
-.container_12,
-.container_16 {
-  zoom: 1;
-}
